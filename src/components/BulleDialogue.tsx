@@ -25,7 +25,7 @@ export default function BulleDialogue() {
             className="bg-red-500 text-white"
             onClick={() => router.push("/inscription")}
           >
-            S'inscrire
+            S&aposinscrire
           </Button>
         </div>
       </div>

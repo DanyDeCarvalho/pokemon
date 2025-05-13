@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import Pokedex from "../Pokedex";
 import { HomePageProps } from "../../types/type";
 import BulleDialogue from "../BulleDialogue";

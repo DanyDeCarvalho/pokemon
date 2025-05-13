@@ -43,7 +43,7 @@ export default function AmisHomePage() {
           <Notification/>
             <form onSubmit={handleSubmit(demandeAmis)} >
             <label htmlFor="username" className="block">
-            Nom d'utilisateur
+            Nom d&aposutilisateur
           </label>
           <Input id="username" {...register("username")}/>
           <p>{errors.username?.message}</p>

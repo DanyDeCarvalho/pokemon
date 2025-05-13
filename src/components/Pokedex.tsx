@@ -1,6 +1,5 @@
 "use client";
 import { PokedexProps } from "types/type";
-import BulleDialogue from "./BulleDialogue";
 
 export default function Pokedex({ children }: PokedexProps) {
   return (

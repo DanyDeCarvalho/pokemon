@@ -2,16 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowBigLeft, ArrowBigRight, Castle, ChevronDown, ChevronUp } from "lucide-react";
+import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 import Notification from "../amis/Notification";
 import { SelectionEquipeProps } from "types/type";
 import ListeEquipe from "./ListeEquipe";
-import AjoutEquipe from "./AjoutEquipe";
 
 export default function SelectionPokemon({ pokemons, equipes }: SelectionEquipeProps) {
   const [pokemonDetails, setPokemonDetails] = useState<any[]>([]);
   const [index, setIndex] = useState(0);
-  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     async function fetchPokemons() {

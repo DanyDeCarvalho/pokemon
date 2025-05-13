@@ -4,7 +4,6 @@ import type { NextRequest } from 'next/server';
 export async function middleware(req : NextRequest) {
   try {
 
-    console.log("[Middleware] Vérification en cours:", req.nextUrl.pathname);
 
     const protectedRoutes = [/^\/amis$/, /^\/combats$/, /^\/equipe$/, /^\/mainmenu$/];
     const currentPath = req.nextUrl.pathname;
