@@ -8,7 +8,7 @@ export default function AjoutPokemon({ equipeId, pokemonId }: AjoutPokemonProps)
     const ajouterPokemonAEequipe = async ({ equipeId, pokemonId }: AjoutPokemonProps) => {
         try {
             console.log(pokemonId);
-            const res = await fetch(`http://localhost:3000/equipe/equipe/${equipeId}/pokemon`, {
+            const res = await fetch(`https://pokemonapi-production-b931.up.railway.app/equipe/equipe/${equipeId}/pokemon`, {
                 method: 'POST',
                 credentials: 'include',
                 headers: {
@@ -16,8 +16,8 @@ export default function AjoutPokemon({ equipeId, pokemonId }: AjoutPokemonProps)
                 },
                 body: JSON.stringify({
                     pokemon: pokemonId,
-                  }),
-                  
+                }),
+
             });
 
             const data = await res.json();
@@ -28,7 +28,7 @@ export default function AjoutPokemon({ equipeId, pokemonId }: AjoutPokemonProps)
 
 
         } catch (error: any) {
-            
+
         }
     };
 

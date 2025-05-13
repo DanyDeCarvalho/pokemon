@@ -2,7 +2,7 @@
 import HomePage from "../components/ecran/HomePage";
 
 export default async function Home() {
-  const res = await fetch("http://localhost:3000/pokemons/randomPokemon");
+  const res = await fetch("https://pokemonapi-production-b931.up.railway.app/pokemons/randomPokemon");
   const data = await res.json();
   const image =
     data.sprites?.versions?.["generation-v"]?.["black-white"]?.animated
